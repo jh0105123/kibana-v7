@@ -15,6 +15,8 @@ import ReactDOM from 'react-dom';
 import PivotTableUI from 'react-pivottable/PivotTableUI';
 import 'react-pivottable/pivottable.css';
 
+import customData from './data.json';
+
 export class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -35,7 +37,7 @@ export class Main extends React.Component {
   render() {
     const { title } = this.props;
     // const data = [['attribute', 'attribute2'], [500, 120]];	  
-    const data = require("./data.json");
+    const data = customData;
 
     return (
       <EuiPage>
