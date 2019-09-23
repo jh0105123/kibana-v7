@@ -15,8 +15,6 @@ import ReactDOM from 'react-dom';
 import PivotTableUI from 'react-pivottable/PivotTableUI';
 import 'react-pivottable/pivottable.css';
 
-import * as csv from "csvtojson";
-
 export class Main extends React.Component {
   constructor(props) {
     super(props);
