@@ -33,7 +33,7 @@ export class Main extends React.Component {
   }
   render() {
     const { title } = this.props;
-    const data = [['attribute', 'attribute2'], ['value1', 'value2']];	  
+    const data = [['attribute', 'attribute2'], [500, 120]];	  
 
     return (
       <EuiPage>
@@ -43,14 +43,14 @@ export class Main extends React.Component {
               <h1>
                 <FormattedMessage
                   id="pivottable.helloWorldText"
-                  defaultMessage="{title} Hello World!"
+                  defaultMessage="{title}"
                   values={{ title }}
                 />
               </h1>
             </EuiTitle>
           </EuiPageHeader>
           <EuiPageContent>
-            <EuiPageContentHeader>
+            {/* <EuiPageContentHeader>
               <EuiTitle>
                 <h2>
                   <FormattedMessage
@@ -59,9 +59,9 @@ export class Main extends React.Component {
                   />
                 </h2>
               </EuiTitle>
-            </EuiPageContentHeader>
+            </EuiPageContentHeader> */}
             <EuiPageContentBody>
-              <EuiText>
+              {/* <EuiText>
                 <h3>
                   <FormattedMessage
                     id="pivottable.congratulationsText"
@@ -75,13 +75,11 @@ export class Main extends React.Component {
                     values={{ time: this.state.time || 'NO API CALL YET' }}
                   />
                 </p>
-              </EuiText>
-	    	            <PivotTableUI
-	                    data={data}
-	                    onChange={s => this.setState(s)}
-	                    {...this.state}
-	                />
-
+              </EuiText> */}
+                  <PivotTableUI
+                    data={data}
+                    onChange={s => this.setState(s)}
+                    {...this.state}/>
             </EuiPageContentBody>
           </EuiPageContent>
         </EuiPageBody>
