@@ -15,6 +15,8 @@ import ReactDOM from 'react-dom';
 import PivotTableUI from 'react-pivottable/PivotTableUI';
 import 'react-pivottable/pivottable.css';
 
+import * as csv from "csvtojson";
+
 export class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -31,9 +33,11 @@ export class Main extends React.Component {
       this.setState({ time: resp.data.time });
     });
   }
+
   render() {
     const { title } = this.props;
-    const data = [['attribute', 'attribute2'], [500, 120]];	  
+    // const data = [['attribute', 'attribute2'], [500, 120]];	  
+    const data = require("./data.json");
 
     return (
       <EuiPage>
