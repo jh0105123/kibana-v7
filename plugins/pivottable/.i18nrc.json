@@ -1,0 +1,9 @@
+{
+  "paths": {
+    "pivottable": "./"
+  },
+  "translations": [
+    "translations/zh-CN.json"
+  ]
+}
+

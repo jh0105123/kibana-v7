@@ -1,0 +1,17 @@
+{
+  "name": "flexmonster_pivot",
+  "version": "1.0.12",
+  "description": "Flexmonster Pivot Table",
+  "main": "index.js",
+  "kibana": {
+    "version": "0.0.1",
+    "templateVersion": "1.0.0"
+  },
+  "scripts": {},
+  "dependencies": {
+    "elasticsearch": "^15.0.0",
+    "elasticsearch-browser": "^15.0.0",
+    "flexmonster": "^2.7.14",
+    "react-flexmonster": "latest"
+  }
+}
